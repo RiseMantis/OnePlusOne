@@ -78,7 +78,7 @@ function Back(){
         }
     }
     else{
-        value2 = value2.slice(0,-1);
+        value1 = value1.slice(0,-1);
     }
 }
 
