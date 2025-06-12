@@ -63,6 +63,28 @@ for(let i = 0; i<4; i++){
     container.appendChild(arith);
 }
 
+const bksp = document.createElement("button");
+bksp.setAttribute("style","flex:1 1 auto; background-color:black; color:white;");
+bksp.classList.add("btn");
+bksp.textContent = "Backspace";
+
+function Back(){
+    if(value2==""){
+        if(opt==""){
+            value1 = value1.slice(0,-1);
+        }
+        else{
+            opt = "";
+        }
+    }
+    else{
+        value2 = value2.slice(0,-1);
+    }
+}
+
+bksp.addEventListener("click", function(e){Back(); disp();})
+container.appendChild(bksp);
+
 let ans = document.createElement("button");
 ans.setAttribute("style","flex:2 1 auto; background-color:orangered; color:white;");
 ans.classList.add("btn");
