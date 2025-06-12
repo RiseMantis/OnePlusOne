@@ -1,0 +1,20 @@
+#container {
+    display:flex;
+    flex-direction: column;
+    background-color: darkslategrey;
+    padding:4px;
+    border:2px solid black;
+    text-align: center;
+    height:500px;
+    margin-top: auto;
+}
+
+.btn{
+    outline: 2px solid black;
+    margin: 1.5px;
+}
+
+#screen {
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
